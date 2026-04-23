@@ -14,6 +14,7 @@ var students = <Map<String, dynamic>>[];
 
 
 void main() {
+  int uu =9; // Change -1: Unused variable to demonstrate unused variable feature
   // Feature 2: do-while loop — menu runs at least once, exits on option 8
   var running = true;
   do {
@@ -90,10 +91,11 @@ void addStudent() {
     "scores":   <int>[],                // List<int>
     "subjects": {...availableSubjects}, // Set<String> — spread operator
     "bonus":    null,                   // int?   — nullable
-    "comment":  null,                   // String? — nullable
+    "comment":  null,                   //Change -2
   };
 
   students.add(student);
+
 
   // String interpolation
   print('✓ Student "$name" added successfully!');
